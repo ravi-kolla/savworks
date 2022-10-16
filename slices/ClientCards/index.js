@@ -6,7 +6,7 @@ import { Bounded } from "../../components/Bounded";
 import { Heading } from "../../components/Heading";
 import { ConditionalWrap } from "../../components/ConditionalWrap";
 
-const ImageCard = ({ item }) => {
+const ClientCard = ({ item }) => {
   const image = item.image;
 
   return (
@@ -14,9 +14,9 @@ const ImageCard = ({ item }) => {
       {prismicH.isFilled.image(image) && (
         <div className="bg-gray-100">
           <ConditionalWrap
-            condition={prismicH.isFilled.link(item.buttonLink)}
+            condition={prismicH.isFilled.link(item.link)}
             wrap={({ children }) => (
-              <PrismicLink field={item.buttonLink} tabIndex="-1">
+              <PrismicLink field={item.link} tabIndex="-1">
                 {children}
               </PrismicLink>
             )}
@@ -25,21 +25,11 @@ const ImageCard = ({ item }) => {
           </ConditionalWrap>
         </div>
       )}
-      <div className="leading-relaxed">
-        <PrismicRichText field={item.text} />
-      </div>
-      {prismicH.isFilled.link(item.buttonLink) && (
-        <div>
-          <PrismicLink field={item.buttonLink} className="font-semibold">
-            {item.buttonText || "More Info"}
-          </PrismicLink>
-        </div>
-      )}
     </li>
   );
 };
 
-const ImageCards = ({ slice }) => {
+const ClientCards = ({ slice }) => {
   return (
     <Bounded as="section" className="bg-white">
       <div className="grid gap-12">
@@ -48,9 +38,9 @@ const ImageCards = ({ slice }) => {
             <PrismicText field={slice.primary.heading} />
           </Heading>
         )}
-        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
           {slice.items.map((item) => (
-            <ImageCard key={item.image.url} item={item} />
+            <ClientCard key={item.image.url} item={item} />
           ))}
         </ul>
       </div>
@@ -58,4 +48,4 @@ const ImageCards = ({ slice }) => {
   );
 };
 
-export default ImageCards;
+export default ClientCards;

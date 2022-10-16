@@ -1,6 +1,106 @@
 {
   "slices": {
     "components": {
+      "client_cards": {
+        "library": "slices",
+        "id": "client_cards",
+        "name": "ClientCards",
+        "description": "ClientCards",
+        "model": {
+          "id": "client_cards",
+          "type": "SharedSlice",
+          "name": "ClientCards",
+          "description": "ClientCards",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ClientCards",
+              "primary": {
+                "heading": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "heading1"
+                  }
+                }
+              },
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {
+                      "width": 2200,
+                      "height": 1200
+                    },
+                    "thumbnails": []
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 2200,
+                    "height": 1200
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+                },
+                "text": [
+                  {
+                    "type": "paragraph",
+                    "text": "Sunt eu esse dolore ea ad veniam sit labore. Et quis eu dolor esse minim et eu.",
+                    "spans": []
+                  }
+                ],
+                "link": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                },
+                "buttonText": "milk"
+              }
+            ],
+            "primary": {
+              "heading": [
+                {
+                  "type": "heading1",
+                  "text": "Goose",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "client_cards"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "contact_form": {
         "library": "slices",
         "id": "contact_form",

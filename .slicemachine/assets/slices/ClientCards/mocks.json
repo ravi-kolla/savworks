@@ -1,0 +1,41 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 2200,
+            "height": 1200
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
+        },
+        "text": [
+          {
+            "type": "paragraph",
+            "text": "Sunt eu esse dolore ea ad veniam sit labore. Et quis eu dolor esse minim et eu.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "buttonText": "milk"
+      }
+    ],
+    "primary": {
+      "heading": [
+        {
+          "type": "heading1",
+          "text": "Goose",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "client_cards"
+  }
+]
