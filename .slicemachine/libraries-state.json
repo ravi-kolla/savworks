@@ -562,6 +562,71 @@
           }
         }
       },
+      "job_post": {
+        "library": "slices",
+        "id": "job_post",
+        "name": "JobPost",
+        "description": "Job Post",
+        "model": {
+          "id": "job_post",
+          "type": "SharedSlice",
+          "name": "JobPost",
+          "description": "Job Post",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Text",
+              "primary": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,heading3,heading4,heading5,strong,em,hyperlink,list-item,o-list-item"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Matter",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute amet id exercitation culpa. Velit enim quis officia incididunt anim est dolore cupidatat laboris et excepteur cillum minim nisi. Duis esse fugiat sit sint velit ullamco labore aliqua sunt eiusmod veniam exercitation ullamco sunt.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "job_post"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "quote": {
         "library": "slices",
         "id": "quote",

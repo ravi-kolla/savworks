@@ -57,6 +57,9 @@
             },
             "client_cards": {
               "type": "SharedSlice"
+            },
+            "job_post": {
+              "type": "SharedSlice"
             }
           }
         }
