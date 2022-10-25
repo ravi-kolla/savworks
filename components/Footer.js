@@ -1,12 +1,17 @@
 import * as prismicH from "@prismicio/helpers";
 import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
 
 export const Footer = ({ footer, settings }) => {
+  console.log(footer.data.logo);
   return (
     <footer className="shadow-inner shadow-gray-700 relative bg-blueGray-200 pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
+            <PrismicLink href="/" className="pt-2 text-xl font-semibold tracking-tight max-h-52">
+              <PrismicNextImage field={footer.data.logo}/>
+            </PrismicLink>
             {prismicH.isFilled.richText(footer.data.leftContent) && (
               <div>
                 <PrismicRichText field={footer.data.leftContent} />

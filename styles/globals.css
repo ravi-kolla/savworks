@@ -5,3 +5,14 @@
 [data-collapsible="true"].bg-white + [data-collapsible="true"].bg-white {
   @apply pt-0 md:pt-0;
 }
+
+.logo {
+  max-height: 52px !important;
+  max-width: 200px !important;
+}
+.mobile-button {
+  background-color: #003464;
+}
+.mobile-button svg {
+  color: #fff;
+}

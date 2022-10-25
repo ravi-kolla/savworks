@@ -1,0 +1,68 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "footer",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb"
+    },
+    "leftContent": [
+      {
+        "type": "paragraph",
+        "text": "Incididunt eu esse cupidatat labore magna occaecat sunt nostrud ea cillum deserunt tempor. Ex nisi ex consectetur elit quis reprehenderit aute.",
+        "spans": []
+      }
+    ],
+    "links": [
+      {
+        "label": [
+          {
+            "type": "heading3",
+            "text": "Stuck",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "otherlinks": [
+      {
+        "label": [
+          {
+            "type": "heading3",
+            "text": "Steep",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "copyright": [
+      {
+        "type": "paragraph",
+        "text": "Amet laborum laboris consectetur Lorem. Aliqua et laboris culpa veniam cupidatat dolore deserunt.",
+        "spans": []
+      }
+    ]
+  }
+}
