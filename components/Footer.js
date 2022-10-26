@@ -3,11 +3,10 @@ import { PrismicLink, PrismicRichText, PrismicText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
 export const Footer = ({ footer, settings }) => {
-  console.log(footer.data.logo);
   return (
-    <footer className="shadow-inner shadow-gray-700 relative bg-blueGray-200 pt-8 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap text-left lg:text-left">
+    <footer className="shadow-inner shadow-gray-700 relative brand-blue-bg pt-8 pb-6">
+      <div className="mx-auto px-4">
+        <div className="flex flex-wrap text-left lg:text-left text-white">
           <div className="w-full lg:w-6/12 px-4">
             <PrismicLink href="/" className="pt-2 text-xl font-semibold tracking-tight max-h-52">
               <PrismicNextImage field={footer.data.logo}/>
@@ -39,7 +38,7 @@ export const Footer = ({ footer, settings }) => {
                   {footer.data?.otherlinks.map((item) => (
                     <li
                       key={prismicH.asText(item.label)}
-                      className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      className="text-white font-semibold block pb-2 text-sm"
                     >
                       <PrismicLink field={item.link}>
                         <PrismicText field={item.label} />
@@ -53,7 +52,7 @@ export const Footer = ({ footer, settings }) => {
         </div>
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm text-blueGray-500 font-semibold py-1">
+            <div className="text-sm text-white font-semibold py-1">
             {prismicH.isFilled.richText(footer.data.copyright) && (
                 <p>
                   <PrismicText field={footer.data.copyright} />

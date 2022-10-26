@@ -18,7 +18,7 @@ export const Header = ({ navigation, settings }) => {
   }, []);
 
   return (
-    <Bounded as="header" className="border-b-2 py-2">
+    <Bounded as="header" className="brand-blue-bg py-2">
     <div className="">
       <Disclosure as="nav">
         {({ open }) => (
@@ -36,7 +36,7 @@ export const Header = ({ navigation, settings }) => {
                     {navigation.data?.links.map((item) => (
                       <li
                         key={prismicH.asText(item.label)}
-                        className="font-semibold tracking-tight text-slate-800 list-none"
+                        className="font-semibold tracking-tight text-white list-none"
                       >
                         <PrismicLink field={item.link}>
                           <PrismicText field={item.label} />
@@ -65,7 +65,7 @@ export const Header = ({ navigation, settings }) => {
                 {navigation.data?.links.map((item) => (
                   <li
                     key={prismicH.asText(item.label)}
-                    className="font-semibold tracking-tight text-slate-800 list-none hover:bg-gray-100"
+                    className="font-semibold tracking-tight text-white list-none"
                   >
                     <PrismicLink field={item.link}>
                       <PrismicText field={item.label} />

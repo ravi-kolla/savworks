@@ -11,8 +11,18 @@
   max-width: 200px !important;
 }
 .mobile-button {
-  background-color: #003464;
+  background-color: #fff !important;
 }
 .mobile-button svg {
-  color: #fff;
+  color: #003464 !important;
+}
+.brand-blue-bg {
+  background-color: #003464 !important;
+}
+.img-component span,
+.img-component span > span,
+.img-ht-375 {
+  min-height: 100px !important;
+  height: 375px !important;
+  max-height: 375px !important;
 }
